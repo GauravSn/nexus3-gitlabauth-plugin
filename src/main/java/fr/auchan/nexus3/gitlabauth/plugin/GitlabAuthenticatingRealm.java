@@ -1,7 +1,6 @@
 package fr.auchan.nexus3.gitlabauth.plugin;
 
 import fr.auchan.nexus3.gitlabauth.plugin.api.GitlabApiClient;
-import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
