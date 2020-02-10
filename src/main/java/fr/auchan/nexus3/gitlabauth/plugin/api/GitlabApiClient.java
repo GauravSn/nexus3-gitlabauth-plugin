@@ -98,7 +98,7 @@ public class GitlabApiClient {
         principal.setUsername(gitlabUser.getEmail());
 
         Set<String> groups = new HashSet<>();
-        if (gitlabUser.isAdmin() && configuration.isGitlabAdminMappingEnabled()) {
+        if (gitlabUser.isAdmin() != null && gitlabUser.isAdmin() && configuration.isGitlabAdminMappingEnabled()) {
             groups.add("nx-admin");
         }
         if (configuration.getGitlabDefaultRole() != null && !configuration.getGitlabDefaultRole().isEmpty()) {
